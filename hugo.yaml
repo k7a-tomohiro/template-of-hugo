@@ -1,0 +1,81 @@
+title: 'HUGO Template'
+theme: 'docsy'
+
+contentDir: 'content'
+defaultContentLanguage: 'en'
+enableMissingTranslationPlaceholders: true
+enableGitInfo: true
+languages:
+  en:
+    disabled: false
+    languageName: 'English'
+    languageCode: 'en-US'
+    weight: 1
+    title: 'Hugo Template'
+  ja:
+    disabled: false
+    languageName: '日本語'
+    languageCode: 'ja-JP'
+    weight: 2
+    title: 'Hugo Template'
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: native # Style list https://xyproto.github.io/splash/docs/all.html
+    guessSyntax: true
+# services:
+#   googleAnalytics:
+#     id: G-XXXXXXXXXX
+
+params:
+  github_repo: https://github.com/k7a-tomohiro/template-of-hugo
+  github_project_repo: https://github.com/k7a-tomohiro/template-of-hugo
+  github_subdir: ""
+  copyright:
+    authors: k7a-tomohiro
+    from_year: 2026
+  math: true
+  offlineSearch: true
+  archived_version: false
+  # version: latest
+  # version_menu: Versions
+  # versions:
+  #   - version: latest
+  #     url: 'https://k7a-tomohiro.github.io/template-of-hugo/latest'
+  #   - version: v0.0.0
+  #     url: 'https://k7a-tomohiro.github.io/template-of-hugo/v0.0.0'
+  ui:
+    showLightDarkModeMenu: true
+    breadcrumb_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_search_disable: false
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    ul_show: 1
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a href="https://github.com/k7a-tomohiro/template-of-hugo/issues/new">tell us how we can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a href="https://github.com/k7a-tomohiro/template-of-hugo/issues/new">tell us how we can improve</a>.
+  links:
+    user:
+      - name: GitHub
+        url: 'https://github.com/k7a-tomohiro/template-of-hugo'
+        icon: fab fa-github
+        desc: Development takes place here!
+
+menu:
+  main:
+    - name: "GitHub"
+      weight: 90
+      url: 'https://github.com/k7a-tomohiro/template-of-hugo'
+      pre: <i class='fa-brands fa-github'></i>

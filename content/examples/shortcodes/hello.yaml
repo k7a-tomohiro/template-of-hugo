@@ -1,0 +1,17 @@
+contentDir: 'content'
+defaultContentLanguage: 'en'
+enableMissingTranslationPlaceholders: true
+enableGitInfo: true
+languages:
+  en:
+    disabled: false
+    languageName: 'English'
+    languageCode: 'en-US'
+    weight: 1
+    title: 'Hugo Template'
+  ja:
+    disabled: false
+    languageName: '日本語'
+    languageCode: 'ja-JP'
+    weight: 2
+    title: 'Hugo Template'

@@ -1,0 +1,6 @@
+node_modules/
+public/
+resources/
+*.deb
+.hugo_build.lock
+!.gitkeep
