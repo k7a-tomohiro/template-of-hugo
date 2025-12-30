@@ -7,8 +7,8 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 {{- $source := .Get "source" -}}
 {{- $from := int (.Get "from") -}}
 {{- $to := int (.Get "to") -}}
-{{ $language := .Get "language" }}
-{{ $options := .Get "options" }}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
 
 <!-- Check from,to range -->
 {{- if or (le $from 0) (lt $to $from) -}}
@@ -26,4 +26,4 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 {{- $snippet := delimit $includedLines "\n" -}}
 
 <!-- Output codes -->
-{{- highlight (trim $snippet "\n\r") $language $options -}}
+{{- highlight (trim $snippet "\n\r") $lang $opts -}}

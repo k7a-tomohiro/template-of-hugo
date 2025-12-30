@@ -38,23 +38,23 @@ func main() {
 
 ## import from file
 
-`code language="go" options="" source="main.go"`
+`code lang="go" opts="" source="main.go"`
 
-{{< code language="go" options="" source="main.go" >}}
+{{< code lang="go" opts="" source="main.go" >}}
 
 ## import from file with line range
 
-`snippet language="go" options="" source="hello.go" from="5" to="7"`
+`snippet lang="go" opts="" source="hello.go" from="5" to="7"`
 
-{{< snippet language="go" options="" source="hello.go" from="5" to="7">}}
+{{< snippet lang="go" opts="" source="hello.go" from="5" to="7">}}
 
 
 ## import from file with tag
 
-`snippet-tag language="go" options="" source="foobar.go" tag="foo"`
+`snippet-tag lang="go" opts="" source="foobar.go" tag="foo"`
 
-{{< snippet-tag language="go" options="" source="foobar.go" tag="foo" >}}
+{{< snippet-tag lang="go" opts="" source="foobar.go" tag="foo" >}}
 
-`snippet-tag language="go" options="" source="foobar.go" tag="bar"`
+`snippet-tag lang="go" opts="" source="foobar.go" tag="bar"`
 
-{{< snippet-tag language="go" options="" source="foobar.go" tag="bar" >}}
+{{< snippet-tag lang="go" opts="" source="foobar.go" tag="bar" >}}

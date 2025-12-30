@@ -6,8 +6,8 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 <!-- Get input params -->
 {{- $source := .Get "source" -}}
 {{- $tag := .Get "tag" -}}
-{{ $language := .Get "language" }}
-{{ $options := .Get "options" }}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
 
 <!-- Read codes from file -->
 {{- $pageDir := .Page.File.Dir -}}
@@ -42,4 +42,4 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 {{- $snippet := delimit $includedLines "\n" -}}
 
 <!-- Output codes -->
-{{- highlight (trim $snippet "\n\r") $language $options -}}
+{{- highlight (trim $snippet "\n\r") $lang $opts -}}

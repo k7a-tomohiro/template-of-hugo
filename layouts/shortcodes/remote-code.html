@@ -5,12 +5,12 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 
 <!-- Get input params -->
 {{- $url := .Get "url" -}}
-{{ $language := .Get "language" }}
-{{ $options := .Get "options" }}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
 
 <!-- Read codes from url -->
 {{- $remote := resources.GetRemote $url -}}
 {{- $content := $remote.Content -}}
 
 <!-- Output codes -->
-{{- highlight (trim $content "\n\r") $language $options -}}
+{{- highlight (trim $content "\n\r") $lang $opts -}}

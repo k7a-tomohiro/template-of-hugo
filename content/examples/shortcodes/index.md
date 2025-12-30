@@ -26,6 +26,6 @@ Use `remote-content url="https://github.com/github/gitignore/raw/refs/heads/main
 
 ## remote-code
 
-`remote-code language="go" options="" url="https://github.com/google/go-github/raw/refs/heads/master/example/simple/main.go"`
+`remote-code lang="go" opts="" url="https://github.com/google/go-github/raw/refs/heads/master/example/simple/main.go"`
 
-{{< remote-code language="go" options="" url="https://github.com/google/go-github/raw/refs/heads/master/example/simple/main.go" >}}
+{{< remote-code lang="go" opts="" url="https://github.com/google/go-github/raw/refs/heads/master/example/simple/main.go" >}}
