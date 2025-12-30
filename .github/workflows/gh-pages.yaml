@@ -35,7 +35,7 @@ jobs:
           git fetch --tags
           git checkout tags/${DOCSY_VERSION}
           npm install
-      - run: hugo --minify
+      - run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: "./public"
