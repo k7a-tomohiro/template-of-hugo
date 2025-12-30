@@ -2,4 +2,4 @@
 {{- $pageDir := .Page.File.Dir -}}
 {{- $filepath := path.Join "content" $pageDir $source -}}
 {{- $content := readFile $filepath -}}
-{{- $content -}}
+{{- $content | safeHTML -}}
