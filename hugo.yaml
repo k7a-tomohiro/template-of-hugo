@@ -1,5 +1,6 @@
 title: 'HUGO Template'
 theme: 'docsy'
+baseURL: 'https://k7a-tomohiro.github.io/template-of-hugo/'
 
 contentDir: 'content'
 defaultContentLanguage: 'en'

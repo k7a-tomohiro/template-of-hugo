@@ -1,6 +1,5 @@
 {{- $source := .Get "source" -}}
-{{- $path := .Page.RelPermalink -}}
-{{- $cleanPath := replace $path (printf "/%s/" .Site.Language.Lang) "/" -}}
-{{- $filepath := print "/content" $cleanPath $source -}}
+{{- $pageDir := .Page.File.Dir -}}
+{{- $filepath := path.Join "content" $pageDir $source -}}
 {{- $content := readFile $filepath -}}
 {{- $content -}}
