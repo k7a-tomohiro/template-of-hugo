@@ -34,7 +34,7 @@ jobs:
           cd themes/docsy/
           git fetch --tags
           git checkout tags/${DOCSY_VERSION}
-          && npm install
+          npm install
       - run: hugo --minify
       - uses: actions/upload-pages-artifact@v4
         with:
