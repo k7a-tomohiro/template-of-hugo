@@ -1,0 +1,18 @@
+{{- $id := .Get "id" -}}
+{{- $style := .Get "style" -}}
+{{- $file := .Get "file" -}}
+{{- $path := .Page.Resources.Get $file -}}
+
+<div id="{{ $id }}" style="{{ $style | safeCSS }}"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  AsciinemaPlayer.create('{{ $path.RelPermalink }}', document.getElementById('{{ $id }}'), {
+    speed: 2,
+    idleTimeLimit: 2,
+    autoPlay: true,
+    loop: true,
+    cols: 80,
+    rows: 24,
+  });
+});
+</script>
